@@ -13,7 +13,7 @@ public class TestCases extends BasePage{
         home.clickBtn(HomePage.understandBtn);
         home.clickBtn(HomePage.loginBtn);
 
-        home.login(PropertiesFile.getPropertyValuebyKey("EmailID"), System.getenv("Password"));
+        home.login(System.getenv("EmailID"), System.getenv("Password"));
 
         home.clickBtn(HomePage.BeautyCategoryOption); //Navigating to category of choice : Beauty
 
